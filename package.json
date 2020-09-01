@@ -1,0 +1,13 @@
+{
+  "name": "eslint-no-const-enum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint './src/**/*.{js, ts}'",
+    "test": "eslint './src/test/**/*.{js, ts}'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
