@@ -15,14 +15,14 @@ var fs = require("fs"),
 		path.join(SRC_DIR,"index.js"),
 	],
 	LIB_DIST = [
-		path.join(DIST_DIR,"eslint-plugin-proper-arrows.js"),
+		path.join(DIST_DIR,"eslint-plugin-no-const-enum.js"),
 	]
 ;
 
 
 // ***************************
 
-console.log("*** Building ESLint Plugin 'proper-arrows' ***");
+console.log("*** Building ESLint Plugin 'no-const-enum' ***");
 
 // read version number from package.json
 var packageJSON = JSON.parse(
