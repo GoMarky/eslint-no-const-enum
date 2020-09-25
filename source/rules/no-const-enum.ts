@@ -9,31 +9,33 @@ const rule = ruleCreator({
   meta: {
     docs: {
       category: "Best Practices",
-      description: "Forbids the use of banned observables.",
+      description: "",
       recommended: false,
     },
     messages: {
-      forbidden: "Do not use template literals",
+      forbidden: "Do not use const with enum declaration.",
     },
     schema: [
       {
         type: "object",
-        description: stripIndent`
-          An object containing keys that are names of observable factory functions
-          and values that are either booleans or strings containing the explanation for the ban.`,
+        description: stripIndent``,
       },
     ],
     type: "problem",
   },
-  name: "no-const-enum",
+  name: "base",
   // @ts-ignore
   create: (context) => {
     return {
-      TemplateLiteral: (node: es.ImportSpecifier) => {
-        context.report({
-          node,
-          messageId: "forbidden",
-        });
+      TSEnumDeclaration: (node: es.TSEnumDeclaration) => {
+        const hasConst = Reflect.has(node, "const");
+
+        if (hasConst) {
+          context.report({
+            node,
+            messageId: "forbidden",
+          });
+        }
       },
     };
   },
