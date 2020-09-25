@@ -1,6 +1,6 @@
 {
   "name": "@gomarky/eslint-plugin-no-const-enum",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "ESLint rules that enum doesn't contains const keyword",
   "homepage": "https://github.com/GoMarky/eslint-no-const-enum",
   "author": "Andrew Slesarenko <swen295@gmail.com>",
