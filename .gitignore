@@ -1,6 +1,5 @@
-.coveralls.yml
-.history
-node_modules/
-dist/
-coverage/
-test-snippets/
+yarn-error.log
+/build
+/dist
+/node_modules
+/temp

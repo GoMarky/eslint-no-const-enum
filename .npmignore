@@ -1,6 +1,8 @@
-.npmignore
-.gitignore
-.coveralls.yml
-.history
-node_modules/
-coverage/
+/.circleci
+/build
+/node_modules
+/source
+/temp
+/tests
+/ts*.json
+yarn.lock

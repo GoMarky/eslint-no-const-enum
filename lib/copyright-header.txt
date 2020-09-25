@@ -1,5 +1,0 @@
-/*! @gomarky/eslint-plugin-no-const-enum
-	v${version} (c) ${year} Andrew Slesarenko
-	MIT License: http://mit-license.org
-*/
-
