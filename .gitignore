@@ -3,3 +3,5 @@ yarn-error.log
 /dist
 /node_modules
 /temp
+.idea
+.DS_STORE
