@@ -24,7 +24,6 @@ const rule = ruleCreator({
     type: "problem",
   },
   name: "base",
-  // @ts-ignore
   create: (context) => {
     return {
       TSEnumDeclaration: (node: es.TSEnumDeclaration) => {
